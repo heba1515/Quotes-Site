@@ -8,7 +8,7 @@ fetch(`https://dummyjson.com/quotes/${rand}`).then((res)=>{
     return res.json();
 }).then((data)=>{
     console.log(data);
-    quoteArea.innerHTML=`" ${data.quote} " -${data.author}`;
+    quoteArea.innerHTML=`" ${data.quote} " \n\n-${data.author}`;
 })
 
 
